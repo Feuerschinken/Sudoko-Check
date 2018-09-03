@@ -13,7 +13,7 @@ class Sudoku:
     
 
     @staticmethod
-    def check_column_i(a):
+    def check_column_intern(a):
                     one = 0
                     two = 0
                     three = 0
@@ -75,7 +75,7 @@ class Sudoku:
                         print("In der Spalte stehen keine neun Elemente") #ersetze später durch ein return statement
                 
                     else:
-                        check_column_i(a)
+                        check_column_intern(a)
                         
                
 langeweile = Sudoku()
