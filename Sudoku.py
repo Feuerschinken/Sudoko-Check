@@ -3,14 +3,7 @@ from array import array
 
 
 class Sudoku:
-    
-  
-    
-    
-    
-                    
-                    
-    
+
 
     @staticmethod
     def check_column_intern(a):
@@ -61,10 +54,10 @@ class Sudoku:
    
    
                     if (one == 1 and two == 1 and three == 1 and four == 1 and five == 1 and six == 1 and seven == 1 and eight == 1 and nine == 1):
-                       return true
+                       return True
                
                     else:
-                       return false
+                       return False
    
  
  
@@ -75,13 +68,13 @@ class Sudoku:
                         print("In der Spalte stehen keine neun Elemente") #ersetze später durch ein return statement
                 
                     else:
-                    check_column_intern(a)
+                        return langeweile.check_column_intern(a)
                         
                
 langeweile = Sudoku()
 testliste = [1,2,3,4,5,6,7,8,9]
 print(langeweile.check_column(testliste))
-print(len(testliste))
+
                        
    
     
