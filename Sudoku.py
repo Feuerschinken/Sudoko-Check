@@ -75,7 +75,7 @@ class Sudoku:
                         print("In der Spalte stehen keine neun Elemente") #ersetze später durch ein return statement
                 
                     else:
-                        check_column_intern(a)
+                    check_column_intern(a)
                         
                
 langeweile = Sudoku()
