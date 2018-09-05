@@ -1,6 +1,6 @@
 from array import array
 import numpy as np
-
+#the function box_checker still has to be implemented.
 
 class Sudoku:
 
