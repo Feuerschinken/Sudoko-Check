@@ -99,45 +99,274 @@ class Sudoku:
         wrong_number= 0
                     
         
-        
+    
         if  a[column] == 1:
+            one += 1
+   
+        elif a[column] == 2:
+            two += 1
+                           
+        elif a[column] == 3:
+            three += 1
+   
+        elif a[column] == 4:
+            four += 1
+   
+        elif a[column] == 5:
+            five += 1
+                    
+        elif a[column] == 6:
+            six += 1
+    
+        elif a[column] == 7:
+            seven += 1
+   
+        elif a[column] == 8:
+            eight += 1
+    
+    
+        elif a[column] == 9:
+            nine += 1
+            
+            
+        
+        if  b[column] == 1:
             one += 1
    
         elif b[column] == 2:
             two += 1
                            
+        elif b[column] == 3:
+            three += 1
+   
+        elif b[column] == 4:
+            four += 1
+   
+        elif b[column] == 5:
+            five += 1
+                    
+        elif b[column] == 6:
+            six += 1
+    
+        elif b[column] == 7:
+            seven += 1
+   
+        elif b[column] == 8:
+            eight += 1
+    
+    
+        elif b[column] == 9:
+            nine += 1
+   
+           
+        
+        if  c[column] == 1:
+            one += 1
+   
+        elif c[column] == 2:
+            two += 1
+                           
         elif c[column] == 3:
+            three += 1
+   
+        elif c[column] == 4:
+            four += 1
+   
+        elif c[column] == 5:
+            five += 1
+                    
+        elif c[column] == 6:
+            six += 1
+    
+        elif c[column] == 7:
+            seven += 1
+   
+        elif c[column] == 8:
+            eight += 1
+    
+    
+        elif c[column] == 9:
+            nine += 1
+   
+        
+        if  d[column] == 1:
+            one += 1
+   
+        elif d[column] == 2:
+            two += 1
+                           
+        elif d[column] == 3:
             three += 1
    
         elif d[column] == 4:
             four += 1
    
+        elif d[column] == 5:
+            five += 1
+                    
+        elif d[column] == 6:
+            six += 1
+    
+        elif d[column] == 7:
+            seven += 1
+   
+        elif d[column] == 8:
+            eight += 1
+    
+    
+        elif d[column] == 9:
+            nine += 1
+        
+
+        if  e[column] == 1:
+            one += 1
+   
+        elif e[column] == 2:
+            two += 1
+                           
+        elif e[column] == 3:
+            three += 1
+   
+        elif e[column] == 4:
+            four += 1
+   
         elif e[column] == 5:
+            five += 1
+                    
+        elif e[column] == 6:
+            six += 1
+    
+        elif e[column] == 7:
+            seven += 1
+   
+        elif e[column] == 8:
+            eight += 1
+    
+    
+        elif e[column] == 9:
+            nine += 1            
+        
+        
+        if  f[column] == 1:
+            one += 1
+   
+        elif f[column] == 2:
+            two += 1
+                           
+        elif f[column] == 3:
+            three += 1
+   
+        elif f[column] == 4:
+            four += 1
+   
+        elif f[column] == 5:
             five += 1
                     
         elif f[column] == 6:
             six += 1
     
+        elif f[column] == 7:
+            seven += 1
+   
+        elif f[column] == 8:
+            eight += 1
+    
+    
+        elif f[column] == 9:
+            nine += 1
+        
+        if  g[column] == 1:
+            one += 1
+   
+        elif g[column] == 2:
+            two += 1
+                           
+        elif g[column] == 3:
+            three += 1
+   
+        elif g[column] == 4:
+            four += 1
+   
+        elif g[column] == 5:
+            five += 1
+                    
+        elif g[column] == 6:
+            six += 1
+    
         elif g[column] == 7:
+            seven += 1
+   
+        elif g[column] == 8:
+            eight += 1
+    
+    
+        elif g[column] == 9:
+            nine += 1
+        
+        
+        if  h[column] == 1:
+            one += 1
+   
+        elif h[column] == 2:
+            two += 1
+                           
+        elif h[column] == 3:
+            three += 1
+   
+        elif h[column] == 4:
+            four += 1
+   
+        elif h[column] == 5:
+            five += 1
+                    
+        elif h[column] == 6:
+            six += 1
+    
+        elif h[column] == 7:
             seven += 1
    
         elif h[column] == 8:
             eight += 1
     
     
+        elif h[column] == 9:
+            nine += 1
+        
+        
+        if  i[column] == 1:
+            one += 1
+   
+        elif i[column] == 2:
+            two += 1
+                           
+        elif i[column] == 3:
+            three += 1
+   
+        elif i[column] == 4:
+            four += 1
+   
+        elif i[column] == 5:
+            five += 1
+                    
+        elif i[column] == 6:
+            six += 1
+    
+        elif i[column] == 7:
+            seven += 1
+   
+        elif i[column] == 8:
+            eight += 1
+    
+    
         elif i[column] == 9:
             nine += 1
-   
-           
-        else:
-            wrong_number += 1
-   
-   
-                    
+        
         if (one == 1 and two == 1 and three == 1 and four == 1 and five == 1 and six == 1 and seven == 1 and eight == 1 and nine == 1):
+            
             return True
                
         else:
+            
             return False
 
     
@@ -172,7 +401,7 @@ class Sudoku:
     @staticmethod
     def check_sudoku():
        a = langeweile.check_row(langeweile.sudokua)
-       b =langeweile.check_row(langeweile.sudokub)
+       b = langeweile.check_row(langeweile.sudokub)
        c = langeweile.check_row(langeweile.sudokuc)
        d = langeweile.check_row(langeweile.sudokud)
        e = langeweile.check_row(langeweile.sudokue)
@@ -188,16 +417,22 @@ class Sudoku:
        o = langeweile.check_column(5, langeweile.sudokua, langeweile.sudokub,langeweile.sudokuc,langeweile.sudokud,langeweile.sudokue,langeweile.sudokuf,langeweile.sudokug,langeweile.sudokuh,langeweile.sudokui)
        p = langeweile.check_column(6, langeweile.sudokua, langeweile.sudokub,langeweile.sudokuc,langeweile.sudokud,langeweile.sudokue,langeweile.sudokuf,langeweile.sudokug,langeweile.sudokuh,langeweile.sudokui)
        q = langeweile.check_column(7, langeweile.sudokua, langeweile.sudokub,langeweile.sudokuc,langeweile.sudokud,langeweile.sudokue,langeweile.sudokuf,langeweile.sudokug,langeweile.sudokuh,langeweile.sudokui)
-       r=  langeweile.check_column(8, langeweile.sudokua, langeweile.sudokub,langeweile.sudokuc,langeweile.sudokud,langeweile.sudokue,langeweile.sudokuf,langeweile.sudokug,langeweile.sudokuh,langeweile.sudokui)
+       r = langeweile.check_column(8, langeweile.sudokua, langeweile.sudokub,langeweile.sudokuc,langeweile.sudokud,langeweile.sudokue,langeweile.sudokuf,langeweile.sudokug,langeweile.sudokuh,langeweile.sudokui)
         
-       if (a and b and c and d and e and f and g and h and i and j and k and l and m and o and p and q and r):
+       if (a and b and c and d and e and f and g and h and i and j and k and l and m  and n and o and p and q and r):
            return True
        else:
            return False
 
-
-
-
+       #print("j:" + str(j))
+       #print("k:" + str(k))
+       #print("l:" + str(l))
+       #print("m:" + str(m))
+       #print("n:" + str(n))
+       #print("o:" + str(o))
+       #print("p:" + str(p))
+       #print("q:" + str(q))
+       #print("r:" + str(r))
 
 
 
@@ -239,7 +474,7 @@ print("Der Test auf Korrektheit liefert " + str(langeweile.check_sudoku()))
 
 
 langeweile.check_sudoku()                
-print(langeweile.check_column(0, langeweile.sudokua, langeweile.sudokub,langeweile.sudokuc,langeweile.sudokud,langeweile.sudokue,langeweile.sudokuf,langeweile.sudokug,langeweile.sudokuh,langeweile.sudokui))
+
     
     
     
